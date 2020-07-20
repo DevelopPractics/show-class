@@ -14,8 +14,11 @@ app.get('/', (req, res) => {
 });
 // Require employee routes
 const employeeRoutes = require('./api/routes/employee.routes')
+// Require program routes
+const programRoutes = require('./api/routes/program.routes')
 // using as middleware
 app.use('/api/v1/employees', employeeRoutes)
+app.use('/api/v1/programs', programRoutes)
 // listen for requests
 app.listen(port, () => {
     console.log(`Server is listening on port ${port}`);

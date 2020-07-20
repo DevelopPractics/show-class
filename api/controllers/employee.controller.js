@@ -11,6 +11,7 @@ exports.findAll = function(req, res) {
         res.send(employee);
     });
 };
+
 exports.create = function(req, res) {
     const new_employee = new Employee(req.body);
     //handles null error

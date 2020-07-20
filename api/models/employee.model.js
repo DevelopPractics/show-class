@@ -41,7 +41,6 @@ Employee.findById = function (id, result) {
     });
 };
 
-
 Employee.findAll = function (result) {
     dbConn.query("Select * from employees", function (err, res) {
         if(err) {
@@ -78,4 +77,4 @@ Employee.delete = function(id, result){
     });
 };
 
-module.exports= Employee;
+module.exports = Employee;
